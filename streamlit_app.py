@@ -53,7 +53,7 @@ with st.expander("Show Exploratory Data Analysis"):
     """)
 
 # === Sidebar: Single Prediction UI ===
-st.sidebar.markdown("## ✍️ Predict Single Customer")
+st.sidebar.markdown("Predict Single Customer")
 def get_user_input():
     age = st.sidebar.slider("Age", 18, 70, 35)
     weekly_hours = st.sidebar.slider("Weekly Listening Hours", 0, 40, 10)
