@@ -39,11 +39,11 @@ with st.expander("Show Exploratory Data Analysis"):
             st.pyplot(plt.gcf())
             plt.clf()
 
-    st.subheader("Correlation Heatmap")
-    corr = df.select_dtypes(include=["number"]).corr()
-    fig, ax = plt.subplots(figsize=(10, 6))
-    sns.heatmap(corr, annot=True, cmap="coolwarm", fmt=".2f", ax=ax)
-    st.pyplot(fig)
+    # st.subheader("Correlation Heatmap")
+    # corr = df.select_dtypes(include=["number"]).corr()
+    # fig, ax = plt.subplots(figsize=(10, 6))
+    # sns.heatmap(corr, annot=True, cmap="coolwarm", fmt=".2f", ax=ax)
+    # st.pyplot(fig)
 
     st.subheader("Insights & Recommendations")
     st.markdown("""
